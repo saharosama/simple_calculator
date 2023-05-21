@@ -1,0 +1,81 @@
+<html>
+	<head>
+		
+	<link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<title>A simple calculator</title>
+	</head>
+	<body class="d-grid p-3 pt-5">
+        <h2 class="text-center fs-2">Simple Calculator </h2>
+	<main class="d-block flex-column mx-auto w-100" style="max-width: 375px;">
+<input type="text" name="result" id="f-num" class="form-control shadow-none bg-white text-end fs-1" value="" disabled >
+<div class="row mt-1  g-1 ">
+    <div class="col-6 d-grid">
+        <button class="btn bg-secondary bg-opacity-10 shadow-none border-0 fs-4" onclick="clearScreen()" >C</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-10 shadow-none border fs-4"  onclick="display('%')">%</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-warning bg-opacity-10 shadow-none border-0 fs-4"  onclick="display('+')">+</button>
+    </div>
+</div>
+<div class="row mt-1  g-1 ">
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('1')">1</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('2')">2</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('3')">3</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-info bg-opacity-10 shadow-none border-0 fs-4"  onclick="display('-')">-</button>
+    </div>
+    
+</div>
+<div class="row mt-1  g-1 ">
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('4')">4</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('5')">5</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('6')">6</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-danger bg-opacity-10 shadow-none border-0 fs-4"  onclick="display('*')">*</button>
+    </div>
+    
+</div>
+<div class="row mt-1  g-1 ">
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('7')">7</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4"  onclick="display('8')">8</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4" onclick="display('9')">9</button>
+    </div>
+    <div class="col d-grid">
+        <button class="btn bg-success bg-opacity-10 shadow-none border-0 fs-4" onclick="display('/')">/</button>
+    </div>
+    
+</div>
+<div class="row mt-1  g-1 ">
+    
+    <div class="col-6 d-grid">
+        <button class="btn bg-light bg-opacity-25 shadow-none border fs-4" onclick="display('0')">0</button>
+    </div>
+    
+    <div class="col-6 d-grid">
+        <button class="btn bg-secondary bg-opacity-10 shadow-none border-0 fs-4" onClick="solve()">=</button>
+    </div>
+</div>
+    </main>
+		<script src="main.js"></script>
+	</body>
+</html>
